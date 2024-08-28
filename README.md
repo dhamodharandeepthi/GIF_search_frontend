@@ -42,7 +42,7 @@ https://github.com/user-attachments/assets/420fd752-b85a-4d60-b57e-1028855f649a
 
 - **Frontend:** React, Material-UI, Axios
 
-- **Backend:** Node.js, Express, MongoDB, Mongoose, JWT
+- **Backend:** Node.js, Express, MongoDB, Mongoose, JWT, bcrypt.
 
 - **Authentication:** JWT (JSON Web Tokens)
 
