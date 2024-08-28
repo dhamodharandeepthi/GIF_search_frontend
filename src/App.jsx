@@ -4,9 +4,7 @@ import { TextField, Card, CardMedia, CardContent, Typography, IconButton, Box, C
 import Grid from '@mui/material/Grid';
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 import Pagination from '@mui/material/Pagination';
-import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
-import Login from './Login';
-import Register from './Register';
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -201,29 +199,4 @@ const App = () => {
   );
 };
 
-// protection route
-const ProtectedRoute = ({ children }) => {
-  const token = localStorage.getItem('token');
-  return token ? children : <Navigate to="/login" />;
-};
-
-// main app
-const MainApp = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Navigate to="/register" />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
-      <Route
-        path="/gif-search"
-        element={
-          <ProtectedRoute>
-            <App />
-          </ProtectedRoute>
-        }
-      />
-    </Routes>
-  </Router>
-);
-
-export default MainApp;
+export default App;
