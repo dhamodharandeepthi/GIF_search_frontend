@@ -6,7 +6,7 @@ This project is a GIF search and favorite management application built with the 
 
 ## App link
 
-https://gif-search-app-using-mern.netlify.app/login
+https://gif-search-app-using-mern.netlify.app/register
 
 ## Demo
 
